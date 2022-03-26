@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Las palmas</title>
+
+	<!-- Css -->
+	<link rel="stylesheet" href="{{base_url('css/app.css')}}">
+	<link rel="stylesheet" href="{{base_url('css/landing/landing.css')}}">
+
+	<!-- Material -->
+	<link rel="stylesheet" href="{{base_url('material/css/app.min.css')}}">
+
+</head>
+
+<body>
+
+	<div class="preloading">
+		<div class="spinner"></div>
+	</div>
+
+	<div class="main">
+		<div class="nav border">
+			<div class="container">
+				<p class="logo-title f-700 text-center">🌴 Las palmas</p>
+				<!--<button class="ab-btn ab-primary btn-pedidos text-white ab-rounded f-500">Mis pedidos</button>-->
+			</div>
+		</div>
+		<div class="content-landing">
+			<img class="qr-title border" src="{{base_url('media/otros/qr.png')}}" alt="QR">
+			<h1 class="title text-center f-800 text-black mb-0">Realiza tu pedido <br> aquí y evita la espera <br> en la
+				fila
+			</h1>
+			<p class="text-muted text-center ml-5 mr-5 mt-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+				<br> Voluptas, consequatur!</p>
+			<div class="ab-card border ab-rounded shadow">
+				<div class="icon">📍</div>
+				<div class="form-group mb-0">
+					<small class="text-muted">Seleccionar sucursal</small>
+					<div class="select">
+						<select class="form-control">
+							<option>Option 1</option>
+							<option>Option 2</option>
+							<option>Option 3</option>
+							<option>Option 4</option>
+							<option>Option 5</option>
+							<option>Option 5</option>
+							<option>Option 5</option>
+							<option>Option 5</option>
+						</select>
+						<i class="form-group__bar"></i>
+					</div>
+				</div>
+				<div class="ab-btn ab-primary text-white ab-rounded ml-4 f-500">Comenzar</div>
+			</div>
+		</div>
+
+		<img class="qr border" src="{{base_url('media/otros/qr.png')}}" alt="QR">
+	</div>
+
+	<!-- JS -->
+	<script src="{{base_url('vendors/js/jquery.js')}}"></script>
+	<script src="{{base_url('material/js/app.min.js')}}"></script>
+	<script src="{{base_url('js/app.js')}}"></script>
+	<script>
+		window.onload = () => {
+			preloading(); // Load animation 
+		}
+	</script>
+</body>
+
+</html>
